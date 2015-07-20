@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app-weather">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Work Shop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootswatch-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin-top:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container" ng-controller="JumbotronCtrl">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">About</a></li>
+                <li role="presentation"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Workshop</h3>
+    </div>
+
+    <jumbotron-template title="title" description="description"  cities="cities" temp="getTempCity()" city="city"></jumbotron-template>
+
+    <weather-temp temp="temp" ng-if="temp"></weather-temp>
+
+</div> <!-- /container -->
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/directives/weather-tmp.js"></script>
+<script src="scripts/services/city.js"></script>
+<script src="scripts/services/weather.js"></script>
+<script src="scripts/controllers/jumbotron.js"></script>
+</body>
+</html>

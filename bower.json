@@ -1,0 +1,22 @@
+{
+  "name": "work-shop-angular",
+  "version": "0.0.0",
+  "authors": [
+    "Lazhari Mohammed <lazhari.mohammed@outlook.com>"
+  ],
+  "description": "worshop angular",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3",
+    "bootstrap": "~3.3.5",
+    "bootswatch-dist": "~3.3.1+2-readable"
+  }
+}

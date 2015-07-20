@@ -1,0 +1,10 @@
+<div class="jumbotron text-center">
+    <h1>{{title}}</h1>
+    <p class="lead">{{description}}</p>
+    <p class="text-center">
+        <select name="" id="" class="btn btn-lg btn-success" ng-model="city">
+            <option ng-repeat="city in cities" value="{{city}}">{{city}}</option>
+        </select>
+        <button class="btn btn-danger btn-lg" ng-click="temp()">Go !</button>
+    </p>
+</div>
