@@ -10,6 +10,9 @@ $ sudo npm install -g bower
 
 ``
 $ cd work-shop-angular
+``
+
+``
 $ bower install 
 ``
 
